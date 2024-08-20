@@ -36,6 +36,47 @@ docker run -p 42069:42069 deanoloftwah/memchad:1.1.0
 
 Once the container is running, you'll see a fun welcome message in your terminal, along with the ASCII art you've set up.
 
+### Flex with Telnet 🦾
+
+To show that Memchad is operating like the boss it is, you can flex with `telnet` to connect and throw down some commands. Here’s how the Chad does it:
+
+1. **Roll up on Memchad using `telnet`:**
+
+   ```bash
+   telnet localhost 42069
+   ```
+
+2. **Drop a key-value pair like a champ:**
+
+   After rolling in, you can set a key-value pair with this command:
+
+   ```plaintext
+   set chadkey 0 60 5
+   hello
+   ```
+
+   * `chadkey`: The key name—because Memchad holds the keys to the kingdom.
+   * `0`: Flags (set to 0, because we keep it simple).
+   * `60`: Expiration time in seconds—long enough to get things done.
+   * `5`: The byte count for the value (`hello`), because every byte counts.
+   * `hello`: The value, straight up.
+
+3. **Pull that value like a pro:**
+
+   ```plaintext
+   get chadkey
+   ```
+
+   When you hit that, Memchad will flex back with:
+
+   ```plaintext
+   VALUE chadkey 0 5
+   hello
+   END
+   ```
+
+   That’s how you know Memchad is out here caching like a true Chad.
+
 ### Push to Docker Hub
 
 To share your Memchad image with others, push it to Docker Hub:
