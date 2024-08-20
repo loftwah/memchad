@@ -1,5 +1,7 @@
 # Memchad 🕶️
 
+[Memchad on Docker Hub](https://hub.docker.com/r/deanoloftwah/memchad)
+
 ![memchad](https://github.com/user-attachments/assets/184cb980-9af5-457e-9547-08d687da331e)
 
 **Memchad** is a custom fork of `memcached` that runs on the legendary port **42069**. Designed for high-performance caching, it adds a bit of fun and personality to your development environment. With its unique features and playful ASCII art, Memchad is more than just a caching solution—it's a statement.
